@@ -1,0 +1,22 @@
+body{
+	background-image: url(r1.jpg);
+	background-image: no repeat;
+	background-size: 100% 700px;
+}
+.simple-form{
+	text-align: center;
+	margin:100px 0px;
+	}
+#registeration{
+	width:150%;
+	background-color:#051019;
+	opacity=0.8;
+	padding:50px 0px;	
+}
+#button{
+ width: 250px;
+ padding:10px;
+ border-radius: 5px;
+}
+
+
