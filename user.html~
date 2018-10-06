@@ -7,7 +7,7 @@
 </head>
 <style>
 body{
-	background-image: url(u1.jpg);
+	background-image: url(t.jpg);
 	background-image: no repeat;
 	background-size: 100% ;
 }
@@ -55,7 +55,7 @@ font-family: Georgia, serif	;
 <body>
  <h1>User details</h1>
   <div id="wrapper">
-   <form method="POST" action="index.php" onsubmit="return Validate()" name="vform" >
+   <form method="POST" action="user_details.php" onsubmit="return Validate()" name="vform" >
    	<div id="name">
    	  <label>Fullname</label> <br>
    	  <input type="text" name="fullname" class="textInput">
