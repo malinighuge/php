@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+#wrapper {
+  width: 30%;
+  margin: 50px auto;
+  padding: 40px;
+  background:#CCCCFF;
+}
+.btn {
+  width: 98.6%;
+  border: none;
+  margin-top: 5px;
+  color: white;
+  background-color: #CC3366;
+  border-radius: 5px;
+  padding: 12px;
+}
+h2{
+text-align: center;
+color:#990099;
+font-family: Georgia, serif	;
+
+}
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Payment</h2>
+
+
+       
+
+         <div id="wrapper">
+   <form method="POST" action="#.php" onsubmit="return Validate()" name="vform" >
+            
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <label for="expyear">Exp Year</label>
+            <input type="text" id="expyear" name="expyear" placeholder="2018">
+               <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="218">
+            <div>
+   	<input type="submit" name="submit" value="pay now" class="btn">
+   	</div> 
+             
+            
+        
+    </div>
+  </div>
+ 
+
+</body>
+</html>
