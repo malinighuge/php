@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background-color: bisque;
+    
+    
+}
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+#submit{
+	 background-color: #ffcc99;
+     text-align: center;
+	margin-left:0 px;
+    cursor: pointer;
+   
+}
+
+#button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
