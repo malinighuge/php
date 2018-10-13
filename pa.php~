@@ -114,7 +114,7 @@ mysqli_close($conn);
 <div class="row">
   <div class="column">
     <div class="content">
-      <img src="a.jpg"  >
+      <img src="d1.jpeg"  >
      <b>  <i>Floral Pink Top MRP-350</i></b>
       <form action="" method="post">
 	PRODUCT ID:-<input name="cid">
@@ -125,7 +125,7 @@ mysqli_close($conn);
   </div>
   <div class="column">
     <div class="content">
-     <img src="a1.jpg"  >
+     <img src="d2.jpeg"  >
      <b>  <i>Plain Pink Top MRP-250</i></b>
       <form action="" method="post">
 	PRODUCT ID:-<input name="cid">
@@ -136,7 +136,7 @@ mysqli_close($conn);
   </div>
   <div class="column">
     <div class="content">
-     <img src="a2.jpg"  >
+     <img src="d3.jpeg"  >
    <b>  <i>FullSleeve Top- MRP 300</i></b>
       <form action="" method="post">
 	PRODUCT ID:-<input name="cid">
@@ -147,7 +147,7 @@ mysqli_close($conn);
   </div>
   <div class="column">
     <div class="content">
-     <img src="a3.jpg"  >
+     <img src="d4.jpeg"  >
     <b>  <i>Plain White Top- MRP 225</i></b>
       <form action="" method="post">
 	PRODUCT ID:-<input name="cid">
