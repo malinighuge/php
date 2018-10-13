@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<HEAD>
+
+<TITLE>
+hi
+
+</TITLE>
+
+<link rel="stylesheet" type="text/css" href="p1.css">
+</HEAD>
+
+
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "appy17";
+$dbname = "mydb";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+if(isset($_POST['submit']))
+{
+$cid=$_POST['cid'];
+$quantity=$_POST['quantity'];
+
+
+$query = "INSERT INTO cart (cid,quantity)values('$cid','$quantity')";
+
+$query_run = mysqli_query($conn,$query);
+
+
+}
+mysqli_close($conn);
+?>
+
+
+
+
+
+  <a href="gallery.php"><button>Our products</button></a>
+  <a href="loginn.php"><button>Logout</button></a>
+  
+  
+  
+ </div>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Sliverstone</h1>
+<hr>
+
+<h2>MEN SECTION</h2>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="a.jpg"  >
+      <b>  <i>1.Navyblue Shirt-MRP-450</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:-<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+  </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="a1.jpg"  >
+     <b>  <i>2.Plainshirt- MRP 450</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+  </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="a2.jpg"  >
+   	<b>  <i>3.Skyblue Shirt- MRP 500</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:-<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="a3.jpg"  >
+     <b>  <i>4.Rbl Shirt- MRP 550</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:-<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<h2>WOMEN SECTION</h2>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="a.jpg"  >
+     <b>  <i>Floral Pink Top MRP-350</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:-<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+  </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="a1.jpg"  >
+     <b>  <i>Plain Pink Top MRP-250</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+  </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="a2.jpg"  >
+   <b>  <i>FullSleeve Top- MRP 300</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:-<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="a3.jpg"  >
+    <b>  <i>Plain White Top- MRP 225</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:-<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<h2>KIDS SECTION</h2>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="a.jpg"  >
+    <b>  <i>Smiley Tees MRP-350</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:-<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+  </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="a1.jpg"  >
+   <b>  <i>Printed Tees MRP-400</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+  </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="a2.jpg"  >
+   <b>  <i> Checks Shirt- MRP 350</i></b>
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:-<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+     <img src="a3.jpg">
+     <b>  <i> Cartoon Nightwear- MRP 500</i></b>
+
+      <form action="" method="post">
+	PRODUCT ID:-<input name="cid">
+	QUANTITY:-<input type="number" name="quantity" min="1" max="5">
+	<p><a href="gallery.php"><input type="submit" value="Submit" name="submit" id="submit" ></p></a>
+	</form>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<br><br>
+<button id="button" onclick="window.open('check.php');return false;">CONTINUE TO CHECKOUT </a></button>
+
+</body>
+</html>
